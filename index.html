@@ -3,58 +3,91 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Oficina das Rodas | Reforma e Personalização</title>
-    <meta name="description" content="Especialistas em reforma, diamantação, pintura e solda de rodas automotivas. Qualidade e segurança para o seu veículo.">
+    <title>Oficina das Rodas | Rio Claro - SP</title>
+    <meta name="description" content="Especialistas em conserto, diamantação, pintura e solda de rodas em Rio Claro-SP.">
+    <link rel="shortcut icon" href="https://image2url.com/images/1763596397001-0136c04e-7e0f-40d5-b988-dbaa0c64981f.png">
     <style>
-        /* Reset e Estilos Básicos */
+        /* --- ESTILOS GERAIS --- */
         * { margin: 0; padding: 0; box-sizing: border-box; font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; }
-        body { line-height: 1.6; color: #333; }
+        body { line-height: 1.6; color: #333; background-color: #f4f4f4; }
         a { text-decoration: none; color: inherit; }
+        img { max-width: 100%; height: auto; }
+
+        /* --- CABEÇALHO --- */
+        header { background: #1a1a1a; color: #fff; padding: 1rem 0; position: sticky; top: 0; z-index: 1000; box-shadow: 0 2px 10px rgba(0,0,0,0.3); }
+        .container { width: 90%; max-width: 1200px; margin: auto; display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; }
         
-        /* Cabeçalho */
-        header { background: #1a1a1a; color: #fff; padding: 1rem 0; position: sticky; top: 0; z-index: 1000; }
-        .container { width: 90%; max-width: 1100px; margin: auto; display: flex; justify-content: space-between; align-items: center; }
-        .logo { font-size: 1.5rem; font-weight: bold; color: #f4b400; text-transform: uppercase; }
+        .logo-area { display: flex; align-items: center; gap: 10px; }
+        .logo-img { height: 50px; border-radius: 5px; } /* Ajuste do logo */
+        .logo-text { font-size: 1.5rem; font-weight: bold; color: #f4b400; text-transform: uppercase; }
+
         nav ul { list-style: none; display: flex; gap: 20px; }
         nav a { color: #fff; font-weight: 500; transition: color 0.3s; }
         nav a:hover { color: #f4b400; }
 
-        /* Hero Section (Destaque) */
+        /* --- DESTAQUE (HERO) com sua foto real --- */
         .hero {
-            background: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)), url('https://images.unsplash.com/photo-1486262715619-67b85e0b08d3?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80');
+            /* Usando a imagem que estava no seu código antigo como fundo */
+            background: linear-gradient(rgba(0,0,0,0.8), rgba(0,0,0,0.8)), url('https://image2url.com/images/1763596431555-6b5e0de0-e83f-4d03-8c63-3b98c1124a2a.jpg');
             background-size: cover;
             background-position: center;
-            height: 400px;
+            height: 450px;
             display: flex;
             align-items: center;
             justify-content: center;
             text-align: center;
             color: #fff;
         }
-        .hero h1 { font-size: 2.5rem; margin-bottom: 1rem; }
-        .hero p { font-size: 1.2rem; margin-bottom: 20px; }
-        .btn { background: #f4b400; color: #1a1a1a; padding: 10px 20px; border-radius: 5px; font-weight: bold; }
-        .btn:hover { background: #d9a000; }
+        .hero h1 { font-size: 2.8rem; margin-bottom: 1rem; color: #f4b400; }
+        .hero p { font-size: 1.3rem; margin-bottom: 20px; max-width: 700px; margin-left: auto; margin-right: auto; }
+        .btn { background: #25D366; color: #fff; padding: 12px 25px; border-radius: 5px; font-weight: bold; font-size: 1.1rem; display: inline-flex; align-items: center; gap: 8px; }
+        .btn:hover { background: #1ebc57; }
 
-        /* Serviços */
-        .servicos { padding: 4rem 0; background: #f9f9f9; }
-        .section-title { text-align: center; margin-bottom: 3rem; font-size: 2rem; color: #1a1a1a; }
-        .grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 2rem; }
-        .card { background: #fff; padding: 2rem; border-radius: 8px; box-shadow: 0 2px 5px rgba(0,0,0,0.1); text-align: center; }
-        .card h3 { margin-bottom: 1rem; color: #1a1a1a; }
+        /* --- SEÇÃO DE SERVIÇOS --- */
+        .servicos { padding: 4rem 0; background: #fff; }
+        .section-title { text-align: center; margin-bottom: 3rem; font-size: 2.2rem; color: #1a1a1a; text-transform: uppercase; border-bottom: 3px solid #f4b400; display: inline-block; padding-bottom: 5px; }
+        .center-title { text-align: center; width: 100%; }
         
-        /* Contato e Mapa */
-        .contato { padding: 4rem 0; }
-        .contato-info { text-align: center; margin-bottom: 2rem; }
-        .whatsapp-link { color: #25D366; font-weight: bold; font-size: 1.2rem; }
+        .grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 2rem; }
+        .card { background: #f9f9f9; padding: 2rem; border-radius: 8px; box-shadow: 0 4px 6px rgba(0,0,0,0.1); text-align: center; transition: transform 0.3s; border-top: 4px solid #f4b400; }
+        .card:hover { transform: translateY(-5px); }
+        .card h3 { margin-bottom: 1rem; color: #1a1a1a; font-size: 1.4rem; }
+        .card ul { list-style: none; text-align: left; padding-left: 10px; }
+        .card li { margin-bottom: 8px; padding-left: 15px; position: relative; }
+        .card li::before { content: "•"; color: #f4b400; font-weight: bold; position: absolute; left: 0; }
 
-        /* Rodapé */
-        footer { background: #1a1a1a; color: #888; text-align: center; padding: 2rem 0; margin-top: auto; }
+        /* --- GALERIA INSTAGRAM (NOVO) --- */
+        .galeria-section { padding: 4rem 0; background: #f4f4f4; }
+        .instagram-grid { 
+            display: flex; 
+            flex-wrap: wrap; 
+            justify-content: center; 
+            gap: 20px; 
+        }
+        /* Força os embeds do Instagram a ficarem comportados */
+        .instagram-media { 
+            min-width: 300px !important; 
+            max-width: 326px !important; 
+            box-shadow: 0 4px 10px rgba(0,0,0,0.1) !important;
+        }
 
-        /* Responsividade */
+        /* --- CONTATO E MAPA --- */
+        .contato { padding: 4rem 0; background: #1a1a1a; color: #fff; }
+        .contato-container { display: flex; flex-wrap: wrap; gap: 2rem; justify-content: space-between; }
+        .info-box { flex: 1; min-width: 300px; }
+        .info-box h3 { color: #f4b400; margin-bottom: 1rem; font-size: 1.5rem; }
+        .info-box p { margin-bottom: 1rem; font-size: 1.1rem; }
+        .mapa-box { flex: 1; min-width: 300px; height: 300px; }
+        .mapa-box iframe { width: 100%; height: 100%; border-radius: 8px; }
+
+        /* --- RODAPÉ --- */
+        footer { background: #000; color: #888; text-align: center; padding: 1.5rem 0; margin-top: auto; border-top: 1px solid #333; }
+
+        /* Responsividade Mobile */
         @media (max-width: 768px) {
             .hero h1 { font-size: 2rem; }
-            nav { display: none; } /* Simplificação para mobile: esconder menu neste exemplo básico */
+            nav { display: none; } /* Em telas pequenas, simplificamos ocultando o menu topo */
+            .contato-container { flex-direction: column; }
         }
     </style>
 </head>
@@ -62,11 +95,15 @@
 
     <header>
         <div class="container">
-            <div class="logo">Oficina das Rodas</div>
+            <div class="logo-area">
+                <img src="https://image2url.com/images/1763596359476-1a6ff30b-6331-4bdb-abfa-c40f1becd337.png" alt="Logo Oficina das Rodas" class="logo-img">
+                <div class="logo-text">Oficina das Rodas</div>
+            </div>
             <nav>
                 <ul>
                     <li><a href="#inicio">Início</a></li>
                     <li><a href="#servicos">Serviços</a></li>
+                    <li><a href="#galeria">Fotos</a></li>
                     <li><a href="#contato">Contato</a></li>
                 </ul>
             </nav>
@@ -74,40 +111,82 @@
     </header>
 
     <section id="inicio" class="hero">
-        <div>
-            <h1>Especialistas em Rodas Automotivas</h1>
-            <p>Diamantação, Pintura e Reforma completa para o seu carro.</p>
-            <a href="https://wa.me/5511999999999" class="btn">Orçamento via WhatsApp</a>
+        <div class="container">
+            <div>
+                <h1>Renove as Rodas do seu Carro</h1>
+                <p>Especialistas em Diamantação, Pintura e Solda Tig em Rio Claro - SP.</p>
+                <a href="https://api.whatsapp.com/send/?phone=5519992304129&text=Olá,+vim+pelo+site+e+gostaria+de+um+orçamento!" class="btn" target="_blank">
+                    Orçamento no WhatsApp
+                </a>
+            </div>
         </div>
     </section>
 
     <section id="servicos" class="servicos">
         <div class="container">
-            <h2 class="section-title">Nossos Serviços</h2>
+            <div class="center-title">
+                <h2 class="section-title">Nossos Serviços</h2>
+            </div>
             <div class="grid">
                 <div class="card">
-                    <h3>Diamantação</h3>
-                    <p>Acabamento original CNC para rodas de liga leve, devolvendo o brilho de fábrica.</p>
+                    <h3>Diamantação CNC</h3>
+                    <ul>
+                        <li>Acabamento original de fábrica</li>
+                        <li>Torno CNC com software próprio</li>
+                        <li>Textura espelhada moderna</li>
+                    </ul>
                 </div>
                 <div class="card">
-                    <h3>Pintura Especial</h3>
-                    <p>Cores personalizadas, Black Piano, Grafite e Prata com tinta de alta resistência.</p>
+                    <h3>Pintura e Personalização</h3>
+                    <ul>
+                        <li>Pintura eletrostática e convencional</li>
+                        <li>Black Piano, Grafite, Prata</li>
+                        <li>Verniz de alta resistência UV</li>
+                    </ul>
                 </div>
                 <div class="card">
                     <h3>Solda e Desempeno</h3>
-                    <p>Reparo estrutural de trincas e amassados com segurança garantida.</p>
+                    <ul>
+                        <li>Solda TIG (alumínio) de alta precisão</li>
+                        <li>Recuperação de trincas e ralados</li>
+                        <li>Desempeno hidráulico (Aro 13 ao 24)</li>
+                    </ul>
                 </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="galeria" class="galeria-section">
+        <div class="container">
+            <div class="center-title">
+                <h2 class="section-title">Nossos Trabalhos Recentes</h2>
+                <p style="text-align: center; margin-bottom: 20px;">Siga-nos no Instagram: <a href="https://www.instagram.com/oficina_das_rodas/" target="_blank" style="color: #bc2a8d; font-weight: bold;">@oficina_das_rodas</a></p>
+            </div>
+            
+            <div class="instagram-grid">
+                <blockquote class="instagram-media" data-instgrm-permalink="https://www.instagram.com/p/DIWOrpdR1sl/" data-instgrm-version="14"></blockquote>
+                
+                <blockquote class="instagram-media" data-instgrm-permalink="https://www.instagram.com/p/CurZkyhOibL/" data-instgrm-version="14"></blockquote>
+                
+                <blockquote class="instagram-media" data-instgrm-permalink="https://www.instagram.com/p/DDKStUlx5ql/" data-instgrm-version="14"></blockquote>
+                
+                <blockquote class="instagram-media" data-instgrm-permalink="https://www.instagram.com/p/DCH0H1sRo0_/" data-instgrm-version="14"></blockquote>
             </div>
         </div>
     </section>
 
     <section id="contato" class="contato">
         <div class="container">
-            <h2 class="section-title">Fale Conosco</h2>
-            <div class="contato-info">
-                <p>📍 Rua Exemplo, 123 - Bairro, Cidade - SP</p>
-                <p>📞 (11) 3333-4444</p>
-                <p>📱 <a href="https://wa.me/5511999999999" class="whatsapp-link">Clique aqui para chamar no WhatsApp</a></p>
+            <div class="contato-container">
+                <div class="info-box">
+                    <h3>Endereço e Contato</h3>
+                    <p>📍 <strong>Endereço:</strong><br>Rua 8 A, 298 - Vila Alemã<br>Rio Claro - SP, 13506-685</p>
+                    <p>📞 <strong>WhatsApp:</strong><br>(19) 99230-4129</p>
+                    <p>⏰ <strong>Horário:</strong><br>Atendimento somente com agendamento.</p>
+                </div>
+                <div class="mapa-box">
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3686.069485742296!2d-47.5645!3d-22.4025!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMjLCsDI0JzA5LjAiUyA0N8KwMzMnNTIuMiJX!5e0!3m2!1spt-BR!2sbr!4v1625000000000!5m2!1spt-BR!2sbr" allowfullscreen="" loading="lazy"></iframe>
+                </div>
             </div>
         </div>
     </section>
@@ -117,6 +196,8 @@
             <p>&copy; 2025 Oficina das Rodas. Todos os direitos reservados.</p>
         </div>
     </footer>
+
+    <script async src="//www.instagram.com/embed.js"></script>
 
 </body>
 </html>
